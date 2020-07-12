@@ -4,7 +4,7 @@
 
 ### 第一课
 
-- 进行刻意练习 —— 过变数（5遍刷题） 、 练习弱项 、 馈（主动反馈：寻找各种解题思路 + 被动反馈：code review）
+- 进行刻意练习 —— 过变数（5遍刷题） 、 练习弱项 、 反馈（主动反馈：寻找各种解题思路 + 被动反馈：code review）
 - 总结成脑图
 - 切题：Clarification（看题+与面试官交流） 、Possible solutions（比较+优化） 、Coding、Test
 - 5遍刷题
@@ -102,7 +102,7 @@ Stack<Integer> stack = new Stack<Integer>();
 Queue<Integer> queue = new LinkedList<String>();
 ```
 
-使用addFirst或addLast替换push：
+**使用addFirst或addLast替换push：**
 
 ```java
 deque.push("a");
@@ -118,12 +118,12 @@ deque.addLast("b");
 deque.addLast("a");
 ```
 
-Queue:
+**Queue:**
 
 - 先进先出
 - 添加元素的操作中 ， 除了对长度判断 ， 还有元素类型做出判断（ClassCastException）以及元素对象属性的判断（如果此元素的某些属性阻止将其添加到此队列中 ， 则抛出一个IllegalArgumentException）
 
-Priority Queue
+**Priority Queue：**
 
 - insert: O(1)
 
@@ -209,7 +209,7 @@ Priority Queue
 
    - 后面就是不断的递归，最终把整个链表给串起来。
 
-TODO
+**TODO**
 
 7. #88. Merge Sorted Array
 
