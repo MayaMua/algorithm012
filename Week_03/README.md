@@ -22,6 +22,31 @@ public void recur(int level, int param) {
 }
 ```
 
+#### [22. 括号生成](https://leetcode-cn.com/problems/generate-parentheses/)
+
+```java
+// left 随时加 但必须>n
+// right 要在left之后加 (left > right)
+
+l = 0; r = 0;
+private void _generator(int l, int r, int n, String s) {
+    if (l == n && r == n) {
+        result.add(s);
+        return;
+    }
+    if (l < n) {
+        _generator(l + 1, r, n, s + "(");
+    }
+    if (l > r) {
+        _generator(l, r + 1, n, s + ")");
+    }
+}
+```
+
+#### [98. 验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)
+
+**BTS之中序遍历是有序的**，在遍历时候就可判断当前结点与上一个结点大小比较。
+
 
 
 ### 分治回溯
